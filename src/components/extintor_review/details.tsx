@@ -9,7 +9,6 @@ import { SignatureCanvas } from "./signature-canvas"
 import extintor_image from "@/assets/extintores/25181X_01.jpg"
 import { Combobox } from '../ui/combobox';
 import { FaCamera, FaPen } from "react-icons/fa6"
-import { getExtintores } from "@/db/controllers/extintor.controller"
 
 export default function Details() {
     const [extintorImage, setExtintorImage] = useState<string | undefined>(undefined)
@@ -69,7 +68,6 @@ export default function Details() {
         };
 
         setImage(); // call the function only if there is a file
-        getExtintores();
     };
 
 
